@@ -1,0 +1,37 @@
+[color]
+	ui = auto
+[core]
+	autocrlf = input
+	editor = vim
+[user]
+	name = Dan Jarvis
+	email = djarvis@kmbs.konicaminolta.us
+[alias]
+	st = status
+	br = branch -a
+	s = status
+	cl = clone
+	c = commit
+	d = diff
+	dh = diff HEAD
+	dc = diff --staged
+	dw = diff --word-diff
+	dcw = diff --color-words
+	dm = !git diff | mate
+	dv = !git diff | vim
+	who = shortlog -s --
+	ph = push
+	pl = pull
+	lp = log -p
+	lod = log --oneline --decorate
+	lg = log --graph
+	lpo = log --pretty=oneline --abbrev-commit --graph --decorate
+	sync = !git pull && git push
+	lf = log --pretty=fuller
+	hard = !gti reset --hard
+[clean]
+	requireForce = false
+[rebase]
+	autosquash = true
+[push]
+	default = upstream
