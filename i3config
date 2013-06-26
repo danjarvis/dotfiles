@@ -169,11 +169,14 @@ client.focused	#000000	#6A5ACD #FFFFFF
 
 # i3 Startup Commands
 exec --no-startup-id nm-applet
+exec --no-startup-id mintupdate-launcher
 exec --no-startup-id mate-volume-control-applet
 exec --no-startup-id nitrogen --restore
+exec --no-startup-id dropbox start
+exec --no-startup-id xautolock -time 5 -locker "i3lock -i /home/dan/Dropbox/Wallpaper/calmity_retro.png -c 000000 -t"
 
 # Custom Commands
 
 # Lock screen w/ i3lock
-bindsym $mod+Shift+T exec i3lock -i /home/dan/Dropbox/Wallpaper/calmity_retro.png -c 000000 -t
+bindsym $mod+Shift+T exec xautolock -locknow
 bindsym $mod+Shift+S exec "i3-nagbar -m 'Are you sure you want to shutdown?' -b 'Yes' 'shutdown -P now'"
