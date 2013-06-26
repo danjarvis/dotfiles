@@ -173,7 +173,7 @@ exec --no-startup-id mintupdate-launcher
 exec --no-startup-id mate-volume-control-applet
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id dropbox start
-exec --no-startup-id xautolock -time 5 -locker "i3lock -i /home/dan/Dropbox/Wallpaper/calmity_retro.png -c 000000 -t"
+exec --no-startup-id xautolock -time 5 -locker "i3lock -i /home/dan/Dropbox/Wallpaper/lock.png -c 000000 -t"
 
 # Custom Commands
 
