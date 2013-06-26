@@ -61,7 +61,7 @@ augroup END
 
 au BufReadPost  *.inc set filetype=php
 augroup php
-	au FileType php set expandtab
+	au FileType php set noexpandtab
 	au FileType php set tabstop=4
 	au FileType php set shiftwidth=4
 	au FileType php set nowrap
