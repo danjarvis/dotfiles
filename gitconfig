@@ -35,3 +35,5 @@
 	autosquash = true
 [push]
 	default = upstream
+[merge]
+	log = 40
