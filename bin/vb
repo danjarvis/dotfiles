@@ -1,0 +1,3 @@
+#!/bin/sh
+
+/usr/bin/vboxmanage startvm --type $1 "$2"

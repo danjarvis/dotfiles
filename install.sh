@@ -23,3 +23,4 @@ ln -fs ${BASE}/Xdefaults ${HOME}/.Xdefaults
 ln -fs ${BASE}/vimrc ${HOME}/.vimrc
 ln -fs ${BASE}/bashrc ${HOME}/.bashrc
 ln -fs ${BASE}/gitconfig ${HOME}/.gitconfig
+ln -fs ${BASE}/bin/vb ${HOME}/.local/bin/vb
