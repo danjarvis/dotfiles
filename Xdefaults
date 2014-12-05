@@ -18,13 +18,22 @@ URxvt.color13: #AD7FA8
 URxvt.color14: #34E2E2
 URxvt.color15: #EEEEEC
 
+URxvt.iconFile: /usr/share/icons/gnome/scalable/apps/utilities-terminal-symbolic.svg
+
 URxvt.transparent: false
 URxvt.shading: 03
-URxvt.fading: 40
-URxvt.font: xft:Mono:pixelsize=12.5
+URxvt.fading: 10
+/*URxvt.font: xft:Mono:pixelsize=12.5*/
+URxvt.font: xft:DejaVu Sans Mono:pixelsize=12.5:antialias=true:hinting=true
+URxvt.boldFont: xft:DejaVu Sans Mono:bold:pixelsize=12.5:antialias=true:hinting=true
 
-URxvt.scrollBar: false
+URxvt.geometry: 96x54
+
+URxvt.scrollBar: true
+URxvt.scrollBar_right: true
+URxvt.scrollstyle: plain
 URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: true
 URxvt.scrollTtyKeypress: true
 URxvt.urgentOnBell: False
+URxvt.visualBell: True
