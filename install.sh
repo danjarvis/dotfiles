@@ -15,6 +15,10 @@ if [ -h "${HOME}/.i3status.conf" ]; then
 	rm "${HOME}/.i3status.conf"
 fi;
 
+if [ -h "${HOME}/.config/fish/config.fish" ]; then
+	rm "${HOME}/.config/fish/config.fish"
+fi;
+
 
 ln -s ${BASE}/vim ${HOME}/.vim
 ln -s ${BASE}/i3config ${HOME}/.i3/config
@@ -24,3 +28,5 @@ ln -fs ${BASE}/vimrc ${HOME}/.vimrc
 ln -fs ${BASE}/bashrc ${HOME}/.bashrc
 ln -fs ${BASE}/gitconfig ${HOME}/.gitconfig
 ln -fs ${BASE}/bin/vb ${HOME}/.local/bin/vb
+ln -s ${BASE}/fish/config.fish ${HOME}/.config/fish/config.fish
+ln -s ${BASE}/fish/functions/nvm.fish ${HOME}/.config/fish/functions/nvm.fish
