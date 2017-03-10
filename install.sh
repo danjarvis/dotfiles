@@ -29,6 +29,8 @@ ln -fs ${BASE}/bashrc ${HOME}/.bashrc
 ln -fs ${BASE}/gitconfig ${HOME}/.gitconfig
 ln -fs ${BASE}/bin/vb ${HOME}/.local/bin/vb
 ln -s ${BASE}/fish/config.fish ${HOME}/.config/fish/config.fish
+ln -s ${BASE}/fish/functions/fish_prompt.fish ${HOME}/.config/fish/functions/fish_prompt.fish
+ln -s ${BASE}/fish/functions/fish_right_prompt.fish ${HOME}/.config/fish/functions/fish_right_prompt.fish
 ln -s ${BASE}/fish/functions/nvm.fish ${HOME}/.config/fish/functions/nvm.fish
 ln -s ${BASE}/fish/functions/mfp_forward.fish ${HOME}/.config/fish/functions/mfp_forward.fish
 ln -s ${BASE}/fish/functions/mfp_forward_sep.fish ${HOME}/.config/fish/functions/mfp_forward_sep.fish
