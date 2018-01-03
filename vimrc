@@ -19,6 +19,7 @@ filetype plugin indent on
 syntax enable
 set backspace=indent,eol,start
 set listchars=tab:>-,trail:-
+hi SpecialKey ctermfg=black
 hi Normal guibg=black guifg=white
 
 " map ctrl-j and ctrl-k to maximize and move down/up respectively.
@@ -70,6 +71,7 @@ augroup php
 augroup END
 
 au BufReadPost  *.js set filetype=javascript
+au BufReadPost  *.json set filetype=javascript
 augroup javascript
 	au FileType javascript set smarttab
 	au FileType javascript set expandtab
@@ -83,6 +85,7 @@ augroup END
 au BufReadPost  *.html set filetype=xhtml
 au BufReadPost  *.htm set filetype=xhtml
 au BufReadPost  *.tmpl set filetype=xhtml
+au BufReadPost  *.handlebars set filetype=xhtml
 augroup xhtml
 	au FileType xhtml set expandtab
 	au FileType xhtml set tabstop=2
@@ -92,13 +95,22 @@ augroup xhtml
 	au FileType xhtml set list
 augroup END
 
+autocmd BufNewFile,BufReadPost *.styl set filetype=stylus
+augroup stylus
+	au FileType stylus set expandtab
+	au FileType stylus set tabstop=2
+	au FileType stylus set shiftwidth=2
+	au FileType stylus set nowrap
+	au FileType stylus set textwidth=0
+	au FileType stylus set list
+augroup END
+
 augroup java
 	au FileType java set expandtab
 	au FileType java set tabstop=4
 	au FileType java set shiftwidth=4
 	au FileType java set nowrap
 	au FileType java set textwidth=0
-	au FileType java abb sop System.out.println("
 augroup END
 
 au BufReadPost *.as set filetype=actionscript
