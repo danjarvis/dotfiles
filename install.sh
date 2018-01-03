@@ -19,10 +19,16 @@ if [ -h "${HOME}/.config/fish/config.fish" ]; then
 	rm "${HOME}/.config/fish/config.fish"
 fi;
 
+if [ -h "${HOME}/.config/rofi/config" ]; then
+	rm "${HOME}/.config/rofi/config"
+fi;
+
 
 ln -s ${BASE}/vim ${HOME}/.vim
 ln -s ${BASE}/i3config ${HOME}/.i3/config
 ln -s ${BASE}/i3status.conf ${HOME}/.i3status.conf
+mkdir -p ${HOME}/.config/rofi
+ln -s ${BASE}/rofi-config ${HOME}/.config/rofi/config
 ln -fs ${BASE}/Xdefaults ${HOME}/.Xdefaults
 ln -fs ${BASE}/vimrc ${HOME}/.vimrc
 ln -fs ${BASE}/bashrc ${HOME}/.bashrc
