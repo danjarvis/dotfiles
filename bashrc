@@ -6,6 +6,8 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+source ~/.nvm/nvm.sh
+
 # User specific aliases and functions
 function sec {
 	export DEBFULLNAME="Konica Minolta Business Solutions, Solutions Engineering Center"
@@ -20,7 +22,7 @@ function mfp_forward() {
 }
 
 function mfp_forward_sep() {
-	sudo ssh -L 8090:$1:8090 -L8091:$1:8091 -L443:$1:443 -L80:$1:80 -L50003:$1:50003 -L50001:$1:50001 dan@styx
+	sudo ssh -L 8090:$1:8090 -L8091:$1:8091 -L443:$1:443 -L80:$1:80 -L50003:$1:50003 -L50001:$1:50001 dan@polaris.sep.net
 }
 
 ###
@@ -36,6 +38,7 @@ function __prompt_status() {
 #   fi
 }
 
+use_color=true
 function __prompt() {
 	export GIT_PS1_SHOWDIRTYSTATE=1
 	export GIT_PS1_SHOWSTASHSTATE=1
@@ -94,3 +97,6 @@ if [ -d /etc/profile.d ]; then
   done
   unset i
 fi
+export EMAIL=djarvis@kmbs.konicaminolta.us
+export LIBVIRT_DEFAULT_URI=qemu+ssh://dan@lebowski.sep.net/system
+
