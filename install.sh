@@ -32,6 +32,7 @@ ln -s ${BASE}/rofi-config ${HOME}/.config/rofi/config
 ln -fs ${BASE}/Xdefaults ${HOME}/.Xdefaults
 ln -fs ${BASE}/vimrc ${HOME}/.vimrc
 ln -fs ${BASE}/bashrc ${HOME}/.bashrc
+ln -fs ${BASE}/liquidpromptrc ${HOME}/.config/liquidpromptrc
 ln -fs ${BASE}/gitconfig ${HOME}/.gitconfig
 ln -fs ${BASE}/bin/vb ${HOME}/.local/bin/vb
 ln -s ${BASE}/fish/config.fish ${HOME}/.config/fish/config.fish
