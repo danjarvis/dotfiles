@@ -44,3 +44,5 @@ HISTIGNORE='ls:bg:fg:history'
 
 export EMAIL=djarvis@kmbs.konicaminolta.us
 export LIBVIRT_DEFAULT_URI=qemu+ssh://dan@lebowski.sep.net/system
+
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
